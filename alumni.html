@@ -33,6 +33,24 @@
 		#portfolio_list div.item a:hover div.hover{ left: 0px; } &lt;/style&gt;
     </noscript>
 
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+    	skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+    });
+    MathJax.Hub.Queue(function() {
+    	var all = MathJax.Hub.getAllJax(), i;
+    	for(i = 0; i < all.length; i += 1) {
+    		all[i].SourceElement().parentNode.className += ' has-jax';
+    	}
+    });
+    MathJax.Hub.Config({
+    	TeX: { equationNumbers: { autoNumber: "AMS" } }
+    });
+    </script>      
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+
     <style type="text/css">
     :root #header + #content > #left > #rlblock_left {
         display: none !important;
