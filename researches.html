@@ -209,11 +209,27 @@
                                 <div class="heading-title-wrapper ">
                                     <h2 class="title">Researches</h2>
                                     <span class="line-title" style="background-color:#fafafa"></span>
-                                    <span class="sub-title"></span>
                                 </div>
                             </div>
                             <!-- END ET-HEADING-TITLE-BLOCK -->
-                            
+     <div align="center"><img src="./images/researches/Xue2017Robust.png" align="middle" width="500" height="400" title="Fig. 1"></div>
+	 <p><strong>Fig. 1</strong>&emsp;An example of CPLRR architecture with 3 classes. In a classwise manner, our approach jointly aligns images and learns a nonlinear projective function. It separates out the low-rank components with the domain transformations and projects the original corrupted images to the low-rank representations of the exact categories.</p>
+
+    \begin{equation}
+    \begin{aligned} \label{eq:CPLRR}
+    \min_{A,E,\varDelta\tau,W,B} \quad &\sum_{i=1}^{N}||A_i||_* + \lambda ||E_i||_1  \\
+    \mathrm{s.t.} \, \quad \quad & D_i \circ \tau_i + \sum_{k=1}^{n_i} J_{ik} \varDelta \tau_i \varepsilon_k \varepsilon_k^{\mathrm{T}} = A_i + E_i,  \\
+    & A_i - f(W_iD_i + B_i) = 0, \ \ i = 1,2,\cdots,N, \\
+    & \! - \sum_{j=1}^{N} ||A_i - f(W_iD_j + B_i)||_\mathrm{F}^2 < \xi,\ j \neq i . \\
+    \end{aligned}
+    \end{equation}
+
+    <p>
+    <strong>S. Xue</strong> and X. Jin. Robust classwise and projective low-rank representation for image
+    classification. <em>Signal, Image and Video Processing</em>, 1(1):1-9, <strong>2017</strong>. <a href="http://dx.doi.org/10.1007/s11760-017-1136-1" target="_blank">DOI 10.1007/s11760-017-1136-1</a>
+    </p>
+
+	<hr>
                             <!-- END ET-BLOG-BLOCK-->                            
                         </div>
                     </div>
@@ -254,7 +270,7 @@
 
     	<span class="site-footer-owner" style="color:#fff;">This page is maintained by <a href="http://xueshengke.science" target="_blank" style="color:#FF0;">Shengke Xue</a>.</span>
         
-		<span class="site-footer-credits" style="color:#fff;">Created on Wednesday, 23-Apr-2017. Last modified on <!-- #BeginDate format:wfcEn2 -->Sunday, 11-Jun-2017<!-- #EndDate -->.</span>
+		<span class="site-footer-credits" style="color:#fff;">Created on Wednesday, 23-Apr-2017. Last modified on <!-- #BeginDate format:wfcEn2 -->Sunday, 30-Jul-2017<!-- #EndDate -->.</span>
 	    
 	</div>
         <!-- .site-info -->
